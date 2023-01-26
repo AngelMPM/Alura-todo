@@ -1,0 +1,114 @@
+git log --pretty="format:%H": sirve para ver los commit guardados
+git log --pretty="format:%H %s" sl igual que pretty te dice los commit guardados solo te dice las anotaciones que tiene
+git log --oneline te dice solo los ultimos cambios del commit, sin id solo los cambios recientes
+git add . agrega todos los archivos de una carpeta
+git log -p te dice como esta escrito el codigo directamente en el hub
+git push es para subir los datos al servidor y se suben con git push "nombredelservidor" sin comillas y la rama que es en este caso es master
+git pull es para traer los archivos actualizados por los demas el equipo se descargan con git pull "nombredelservidor" y la rama que es master en este caso
+git checkout -b lista asi puedes crear una branch y cambiarte al mismo tiempo 
+git rebase "nombrebranches" sirve para juntar la linea master con alguna otra branch para acomodar bien el codigo
+git merge es para unir los archivos en la master pero solo en su linea no modificas la linea de otra branch
+git rebase unifica la linea con la de la branch a elegir lo cual queda en la misma linea
+git restore y el codigo que viene el commit de el log y quitara ese "guardado" y te dejara como antes ¡Opción correcta! Con el git restore deshacemos una modificación que aún no fue agregada al index o stage, o sea, antes de hacer git add. Después de agregar con git add, para deshacer una modificación, necesitamos sacarlo de este estado, con git restore --staged. Ahora, si ya hicimos el commit, el comando git revert puede salvarnos.
+git stash es para guardar un cambio para despues 
+git stash list sirve para ver la lista de cambios que todavia no se han commiteado
+git stash apply "numero de stash" sirve para aplicar el cambio, solo contnuara en el stash para despues 
+git stash pop aplica el utlimo stash y elimina el archivo por completo  
+git checkout "numero de commit" te regresa en el tiempo a algun commit guardado para visualizar el codigo
+git diff "e9ebbf4..f2bd7d6" *va pegado el formato solo espaciado por dos puntos es para ver el codigo de los cambios realizados para ver que se modifico esto funciona
+   	    los cabios en el tiempo ya que si no se guarda el archivo solo con el comando diff te dira lo cambiado
+git log -n "numero" se usa para ver los ultimos "numero" commits
+ git tag -a V-0.1.0 -m "tag" sirve para una vez que el proyecto este finalizado lanzar una version o tagear
+git remote -v sirve para ver la ubicacion de los servidores
+
+
+cd .. es para regresar solo una carpeta y de ahi puedes ingresar solo con /nombredelacarpeta
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+primero te vas a tu carpeta donde quieres agregar elservidor y despues creas la carpeta con el comando 
+cd  mkdir "nombre de la carpeta" una vez creada para decirle al programa que es una carpeta  de servidor solamente para quese guarden 
+las cosas pones git init --bare te crea un registro, despues con el comando git remote add "nombredelservidor" seguido de la ubicacion
+de la misma c;/desktop/tal/tal/tal
+
+
+
+como agregar un servidor para que solo se guarde los cambios de el formado inicial
+
+
+
+git init --bare
+De esta manera se creará un repositorio vacío con solo los archivos necesarios para llevar un registro del historial de cambios.
+
+para saber donde esta ubicado el servidor el comando es el siguiente git remote -v te dira la direccion exacta
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Para clonar un repositorio ya hecho puedes hacer una carpeta y con el siguiente comando crear la copia git clone
+
+/c/users/Angel/Desktop/Logica/Comandos/github/servidor/ Proyecto acentuando que la barra final se refiere a el nombre y lleva espacio 
+
+
+git push "nombre del servidor" master sirve para subir tus archivos al nuevo servidor 
+
+para renombrar un servidor se necesita ejecutar el siguiente comando"git remote rename origin local" origin nombre despues nombre a
+renombrar
+
+para traer la el contenido a una carpeta nueva es el siguiente comando"git pull nombre del servidor" master
+Lo que son los repositorios remotos
+Cómo crear un repositorio de Git sin una copia de los archivos (con --bare) para usar como servidor;
+Cómo agregar links a repositorios remotos, con el comando git remote add;
+Cómo descargar un repositorio por primera vez clonándolo con el comando git clone;
+Cómo enviar nuestros cambios a un repositorio remoto, con git push;
+Cómo actualizar nuestro repositorio con los datos en el repositorio remoto, usando git pull;
+Qué es GitHub y para qué sirve;
+Cómo crear un repositorio en GitHub;
+Cómo agregar un repositorio de GitHub como repositorio remoto.
+aula 3
+-----------------------------------------------------------------------------------------------------------------------------------------------
+aula 4
+Vimos lo simple que es resolver los conflictos identificados por Git al intentar hacer merge.
+
+Ahora, genera un conflicto y, en lugar de usar merge, usa rebase para actualizar el master:
+
+Vé a la branch titulo
+Commitea algo
+Vé a la branch master, commitea un cambio en la misma línea
+Ejecuta git rebase titulo
+Mira la salida de Git y usa la información que te da; después de corregir el conflicto, continúa con el rebase.
+
+¡Buena suerte! ;-)
+----------------------------------------------------------------------------------------------------------------------------------------------
+una vez utilizado el comando git checkout "numero de commit" para continuar tienes que crear una branch con git checkout -b "nombre de la branch" y asi crearas un backup
+en el tiempo de ese commit 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+aula 5 
+En esta aula aprendimos:
+
+Que Git puede ayudarnos a deshacer cambios que no vamos a utilizar;
+Que, para deshacer un cambio antes de agregarlo para commit(con git add), podemos usar el comando git restore <archivos>;
+Que, para deshacer un cambio después de agregarlo paracommit, primero debemos ejecutar git restore --staged <archivos> y luego podemos deshacerlos con git restore <files>;
+Que, para revertir los cambios realizados en un commit, el comando git revert puede ser la solución;
+Que el comando git revert genera un nuevo commit informando que los cambios fueron deshechos;
+Que, para guardar un trabajo y reanudarlo más tarde, podemos usar git stash;
+Que, para ver qué cambios hay en el stash, podemos usar el comando git stash list;
+Que, con el comando git stash apply <número>, podemos aplicar un cambio específico al stash;
+Que el comando git stash drop <número> elimina un elemento determinado del stash;
+Que el comando git stash pop aplica y elimina el último cambio que se agregó alstash;
+Que git checkout sirve para dejar la copia del código de nuestra aplicación en el estado que queremos:
+git checkout <branch> deja el código en el estado de una branchcon el nombre <branch>;
+git checkout <hash> deja el código en el estado de commit con el hash <hash>.
+---------------------------------------------------------------------------------------------------------
+se puede hacer push a el servidor ya sea el master o el tag de la version 
+------------------------------------------------------------------------------------------------------------------
+clase 6
+En esta clase aprendemos:
+
+Que es posible ver qué cambios se hicieron en cada archivo, con el comando git diff;
+Que, al escribir sólo git diff, vemos los cambios en nuestros archivos que no se agregaron para commit (con git add);
+Que es posible comparar cambios entre dos ramas con git diff <branch1> .. <branch2>
+Que es posible comparar los cambios realizados entre un commit y otro, usando el comando git diff <commit1> .. <commit2>;
+Que Git nos permite guardar “marcos” de nuestra aplicación, por ejemplo, generando versiones, a través de git tag;
+Que el comando git tag -a se usa para generar una nueva tag;
+Las Releases de GitHub, que son generadas para cada tag de Git que creamos en nuestro repositorio.

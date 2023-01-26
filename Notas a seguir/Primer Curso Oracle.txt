@@ -1,0 +1,5 @@
+Primer Curso <>
+____________________________________________________________________________________________________________________________________
+El contenido de la TAG h1 "Bienvenido" será exhibido en destaque en la página. Vea que el texto está entre la etiqueta de apertura <h1> y la de cierre </h1>, por eso podemos decir que "Bienvenido" es el contenido de la etiqueta <h1>.
+
+Para crear links usamos la etiqueta <a> (ancora). Esa etiqueta funciona de la siguiente manera:

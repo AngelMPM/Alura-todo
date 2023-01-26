@@ -1,0 +1,58 @@
+<canvas id="myCanvas" width="600" height="200"></canvas>
+
+<script>
+  // Obtener el elemento canvas
+  var canvas = document.getElementById("myCanvas");
+  // Obtener el contexto del canvas
+  var ctx = canvas.getContext("2d");
+
+  // Datos de uso de navegadores en 2009
+  var datos2009 = {
+    chrome: 6,
+    firefox: 47,
+    ie: 41,
+    safari: 3,
+    otros: 3
+  };
+
+  // Datos de uso de navegadores en 2019
+  var datos2019 = {
+    chrome: 81,
+    firefox: 9,
+    ie: 3,
+    safari: 3,
+    otros: 4
+  };
+
+  // Colores para cada tipo de navegador
+  var colores = {
+    chrome: "#4285F4",
+    firefox: "#FF5252",
+    ie: "#F4B400",
+    safari: "#00C853",
+    otros: "#9E9E9E"
+  };
+
+  // Función para dibujar una gráfica de barras
+  function dibujarGrafica(datos, x) {
+    // Calcular el ancho de cada barra y el espacio entre ellas
+    var ancho = (600 - (Object.keys(datos).length - 1) * 10) / Object.keys(datos).length;
+    // Recorrer cada tipo de navegador
+    var i = 0;
+    for (var navegador in datos) {
+      // Dibujar la barra
+      ctx.fillStyle = colores[navegador];
+      ctx.fillRect(x + i * (ancho + 10), 200 - datos[navegador] * 2, ancho, datos[navegador] * 2);
+      // Escribir el porcentaje debajo de la barra
+      ctx.fillStyle = "#000000";
+      ctx.font = "16px sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText(datos[navegador] + "%", x + i * (ancho + 10) + ancho / 2, 220);
+      i++;
+    }
+  }
+
+  // Dibujar las dos gráficas
+  dibujarGrafica(datos2009, 0);
+  dibujarGrafica(datos2019, 300);
+</script>

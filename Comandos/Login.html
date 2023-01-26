@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<h1>Intento de login</h1>
+<script>
+    function imprimir(frase){
+        document.write(frase);
+        document.write("<br>");
+
+    }
+    function saltarLinea(){
+        imprimir("<br>");
+        imprimir("<br>");
+        imprimir("<br>");
+    }
+    var usuarioRegistrado = "Oporto31"
+    var contrasehaRegistrada = "Angel31."
+    var intentos = 1
+
+   
+   
+
+    while(intentos <= 3) {
+
+        var usuario = prompt("Ingrese su usuario");
+        var contraseha = prompt("ingrese contraseña");
+
+        if( usuarioRegistrado == usuario && contrasehaRegistrada == contraseha ){
+            
+            alert("Accediste correctamente, Bienvenido " + usuario);
+            break;
+            imprimir("Bienvenido a alura")
+
+        }
+        
+        else{
+            alert("Contraseña o usuario incorrecto")
+           
+            
+
+        }
+        intentos++
+
+        
+
+    }
+    
+    //notas
+    // El comando While tiene que tener antes sus variables con las que se va a comparar y antes de terminan el comando tienes que epecificar cuantas veces se repite si no entra en bucle
+    //Dentro de while(va la comparacion por ejemplo intentos = 1 <= 10 osea que tiene 10 intentos para intentar )
+    // Dentro de de while va el if hace la comparacion de campos iguales
+
+    </script>

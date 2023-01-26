@@ -1,0 +1,31 @@
+<meta charset = "UTF-8">
+
+¿En que año murio Beethoven?
+<br>
+<br>
+<br>
+
+<input/>
+<button>Verificar si acertó</button>
+
+<script>
+
+  var secreto = ;
+  var input = document.querySelector("input");
+
+  function verificar (){
+
+    if (parseInt(input.value) == secreto) {
+        alert("usted acertó");
+    }
+
+    else {
+        alert("usted erró");
+    }
+  }
+
+  var button = document.querySelector("button");
+  button.onclick = verificar;
+
+
+</script>

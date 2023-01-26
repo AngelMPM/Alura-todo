@@ -1,0 +1,48 @@
+FOCO LECCION
+-------------------------------------------------------------------------------------------------------------------------------------
+Crear listas
+"TAREAS DE LA SEMANA"
+listas mas cortas "eficientes"
+clasificar cosas por tiempo y enfocar en las mas necesarias a corto plazo
+------------------------------------------------------------------------
+Como crear una lista de exito
+negociar si hay interupciones
+-----------------------------------------------------------------------
+Las listas largas a menudo no nos llevan a ninguna parte porque,
+ en la urgencia de querer hacer todo, terminamos sin hacer nada.
+
+¿Has comenzado a crear tu lista de éxitos? Aprovecha este momento y abre un "documento"
+ en tu computadora o toma una hoja y un bolígrafo y comienza a escribir todo lo que tienes    PUNTO UNO
+ intención de hacer este año, recuerda el Principio de Pareto: concéntrate en lo que realmente 
+te brindará la mayor cantidad de resultados y no pierdas tiempo con distracciones.
+-------------------------------------------------------------------------------------------------------------------------------------
+El multitask no es tan efectivo si es un area muy dificil 
+perdemos el 28% de trabajo en un dia normal intentando ser multitask
+--------------------------------------------------------------------------------------------------------------------------------------
+Lo que aprendimos:
+
+Si no hay acción, las listas se convierten en recordatorios de tus mejores planes que no se pusieron en práctica.
+Pareto señala que, la mayor parte de lo que deseas, llega gracias a las cosas más importantes que hagas.
+Cuanto más te centres en ser productivo, mejor. Permite que lo más importante dirija tu día.
+Ser multitareas es una ilusión.
+----------------------------------------------------------------------------------------------------------------------------------------
+¿Que es tener exito para mi?
+------------------------------------------------------------------------------------------------------------------------------------
+Construir un habito a la vez
+solo uno a la vez con diciplina 
+-------------------------------------------------------------------------------------------------------------------------------------
+Vida espiritual: no me refiero a la religión, pero ¿qué puedo hacer para ayudar a los demás?
+Salud física: ¿cuál es la acción principal que puedo tomar para cumplir con mi rutina de ejercicios?
+Vida personal: ¿cuál es la acción principal que puedo tomar para mejorar mi capacidad de comunicarme con las personas?, o ¿qué es lo que puedo hacer para tener más tiempo para mí misma?
+Relaciones principales: ¿cuál es la acción principal que puedo tomar para mejorar mi relación con mi esposo(a), novio(a)? ¿Qué es lo principal que puedo hacer para demostrar que valoro a mis padres?
+Trabajo: ¿cuál es la acción principal que puedo hacer para ser reconocida?
+Negocios: ¿cuál es la acción principal que puedo tomar para mejorar mis cursos, mi proyecto de negocio, mi trabajo, mi emprendimiento?
+Vida financiera: ¿cuál es la acción principal que puedo tomar para aumentar mi patrimonio neto?
+-------------------------------------------------------------------------------------------------------------------------------------
+Es necesario utilizar los comandos "CTRL + O" para abrir los archivos HTML, cuando sea necesario, y F12 o “CTRL + SHIFT + i” para abrir 
+la ventana de herramientas del desarrollador (DevTools). Esta característica se abrirá en una nueva ventana para usar el depurador y otras utilidades. 
+Estos comandos se reiterarán a lo largo del desarrollo de los videos.
+<>
+
+
+

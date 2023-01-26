@@ -1,0 +1,160 @@
+<strong>Hace las letras en negritas</strong>  <> 
+<p>ayuda a decir que es un parrafo</p>
+<em>da un tipo de cursiva</em>
+<!DOCTYPE> es para definir a el navegador que es un html5
+<html>para abri como un java </html>  
+<html lang="es"> sirve para definir el idioma y para traducir es mas facil ya que lo detecta "va hasta arriba en el <html>
+<title> define el encabezado de la pagina </title>
+<u1> Representa las silgas en ingles "Under list
+<li> Reperesenta lista 
+<a href="enlace"> se representa para ageregar enlaces a otras paginas que va acompañada de href para hacer referencia a otra pagina
+<nav> es para el panel de navegacion va arriba de el h1 o de la lista en su defecto
+reset.css sirve para borrar todo lo que viene por defecto en el navegador lo tienes que referenciar antes de el link rel="stylesheet"
+que tambien yeba la denominacion stylesheet al igual que el link y se agregab con <link> en ves de <a>
+
+ETIQUETAS INFORMATIVAS
+<head>informativamente dice que estas en el inicio</head>
+<body> la misma frase lo dice segmentas que es el cuerpo de el texto </body>
+
+<form> para generar un formulario
+	<label>Etiqueta para aduera de un formulario</label>
+	<input type="text"> para generar una caja de formulario
+</form>
+
+
+CCS
+en las <p> puedes agrerar style para modificar los parametros visuales de el texto por ejemplo <p style="font-size: 20px;"> que hace 
+la letra mas grande 
+text-align: center; sirve para centrar el texto
+
+Nota:
+Para no repetir en multiples ocaciones (text-align: center;) en la etiqueta body haces una function para que todo lo de 
+<body> lo tenga por default
+
+<textarea cols="70 ancho" rows="10largo" id="xxx"></textarea> sirve para poner un area de texto que sea agrandable
+
+<input type="radio" value="email" id="radio-email"> a todos los input se les puede poner un tipo de traduccion con la etiqueta value
+
+<section></section> crea una caja para seleccionar entre muchas opciones dentro lleva la etiqueta <option> para dar las dieferentes
+opciones a elegir
+
+
+
+Consola de navegador:
+
+margin: significa que deja un margen en algun texto o incluso en una imagen	
+width:ancho se puede dejar centrado o darle un lugar ya sea a la derecha, izquierda, arriba o abajo top (hacia arriba)
+padding: va antes de padding y sirve para el tamaño de el margen a pintar se puede representar en pixeles
+border:  es relleno que puede ir acompañado de "solid" #xxxxxx para rellenar un margen o en su defecto currentcolor que te deja el de 
+defecto
+
+display: inline-block; para que un texto solo abarque lo que esta escrito y no hasta el final de la pagina
+
+vertical-align: top; es para alinear no se todavia si solo imagenes o texto
+
+text-transform: uppercase; es para cambiar un texto a mayusculas
+
+magin: da una espaciamiento para ello son 4 numero primero arriba, derecha, abajo, izquierda o auto para ajustar
+
+Position ABSOLUTE: es para mover rapido el menu utilizando 0 de ahi usas el comando right o left para moverlo hacia una de las esquinas
+
+position relative: para que una imagen o texto no sea estatica
+
+width;es para mover elementos
+
+nav a: hover: sirve para hacer mas dinamico el menu como cambiar el color al poner el puntero encima de algun elemento
+
+Nota: cuando quieres utilizar parametros para algo dentro de una clase priemero .clase y despues ya sea una li(lista)p(p)u1 etc
+
+La propiedad font-weight de CSS especifica el peso o grueso de la letra.Algunos tipos de letra sólo están disponibles
+en normal y bold
+
+display; ya sea que fuera inline;block es para alistarlos en linea
+display; block sirve para bloquear que se pongan seguidos y si no que abarque todo el ancho de la pagina
+ 
+
+
+Todas las paginass web tienen un html independiente y la estructura en todas es la siguiente 
+
+ <!DOCTYPE html>
+
+<html>
+ 
+    <header> 
+
+         <meta charset="UTF-8">
+ 
+         <title>Nombre de la pagina </title>
+ 
+         <link rel="stylesheet" href="referencia al css">
+    
+    </header> 
+
+    <body>
+
+    </body>
+
+</html> 
+
+<textarea cols= rows= id= class= </textarea> 
+
+Asi se compone una tabla primero table, segundo tr y tercero td tabla,
+                <table>
+                    <tr>
+                        <td>Dia</td>
+                        <td>Horario</td>
+                    </tr>
+                </table> 
+                <table>
+
+
+Al final de un form puede llevar required(campo requerido)
+checked si es alguna casilla para que quede seleccionada por defecto
+placeholder para poner un ejemplo detras de un campo a llenar 
+
+Algunos tipos de inputs para el celular: email, tel, number, password, date, datetime, month y search.
+
+Cómo configurar campos obligatorios, o sea, exigir al usuario para que algunos campos sean completados, a través del atributo required.
+
+Cómo mostrar una sugerencia para completar los campos, a través del atributo placeholder.
+
+Cómo dejar una opción marcada por padrón en nuestros input radio y checkbox a través del atributo checked.
+
+Cómo estructurar mejor nuestro código con fieldset y legend.
+
+Cómo agregar una alternativa a la imagen, describiéndola, con el atributo alt.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cómo colocar estilos al botón de envío de formulario.
+
+A realizar transiciones en nuestros elementos, con la propiedad CSS transition.
+
+A modificar el estilo del puntero del mouse, al pasar sobre un determinado elemento, a través de la propiedad CSS cursor.
+
+A realizar transformaciones en nuestros elementos, como aumentar proporcionalmente la escala de determinado elemento o rotarlo, a través de la propiedad CSS transform.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A crear una tabla HTML.
+La etiqueta table, representa la tabla.
+La etiqueta tr, representa la fila de la tabla.
+La etiqueta td, representa la celda de la tabla.
+La etiqueta thead, representa el encabezado de la tabla.
+La etiqueta tbody, representa el cuerpo de la tabla.
+La etiqueta th, representa la celda del encabezado de la tabla.
+La etiqueta tfoot, representa el pie de página de la tabla.
+A colocar los estilos respectivos a nuestra tabla.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+css 4
+---------
+A ajustar la página principal para utilizar los mismos padrones de la página de productos
+Medidas proporcionales con CSS
+Cómo funciona la propiedad float y cómo la podemos usar para que nuestros elementos floten sobre el lado que se indica.
+Como limpiar el float con la propiedad clear del CSS
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A utilizar fuentes externas en nuestras páginas
+Cómo incorporar un mapa en nuestra página
+Cómo incorporar un video en nuestra página
+
+
+
+   

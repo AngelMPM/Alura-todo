@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>Replica de adivinacion</h1>
+<script>
+    function imprimir(frase){
+        document.write(frase);
+        document.write("<br>");
+
+    }
+    function saltarLinea(){
+        imprimir("<br>");
+        imprimir("<br>");
+        imprimir("<br>");
+    }
+
+    var numeroPensado = math.round(math.random()*10);
+    var intentos = 1
+    var contador = 3;
+    while(intentos <= contador ){
+        var numeroLanzado = parseInt(prompt("Ingrese un numero del 1 al 10"));
+        if (numeroPensado == numeroLanzado ){
+        
+            imprimir("Acerto el numero pensado era, " + numeroPensado);
+            break;
+        }
+            else(){}
+       }
+
+
+
+
+       
+

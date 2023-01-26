@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA PARA CALCULAR PUNTOS DE EQUIPO DE FUTBOL</h1>
+
+<script>
+
+	function saltarlinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+    function imprimir(frase){
+
+    	document.write(frase);
+    	document.write("<br>");
+		}
+    var pulparindohot = parseInt(prompt("Cajas de pulparindos Hot"));
+    var pulparindonormal = parseInt(prompt("cajas de pulparindo normal"));
+    var pulparindopicante = parseInt(prompt("cajas de pulparindos picantes"));
+
+    dulcesTotal = pulparindohot * 18 + pulparindonormal * 20 + pulparindopicante * 25
+
+    imprimir("Total de pulparindos es : " + dulcesTotal);
+
+    if (dulcesTotal >= 200 ){
+        if(dulcesTotal < 500 )
+	imprimir ("Hay menos dulces de los contabilizados ");
+
+}
+if (dulcesTotal >= 500 ){
+    if(dulcesTotal < 550 )
+	imprimir ("Dulces contabilizados correctamente ");
+    }
+
+    if (dulcesTotal >= 550 ){
+        if(dulcesTotal < 2050 )
+	imprimir ("Hay mas dulces de los contabilizados ");
+    
+    }
+
+
+	</script>
