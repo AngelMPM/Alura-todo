@@ -1,0 +1,92 @@
+<canvas width="600" height="400">  </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0,0,600,400);
+
+    function dishenarCircuferencia (x,y,radio){
+        pincel.fillStyle = "blue";
+        pincel.beginPath()
+        pincel.arc(x,y,radio,0,2*Math.PI);
+        pincel.fill();
+        }
+
+
+    function limpiarPantalla(){
+
+        pincel.clearRect(0,0,600,30);
+    }
+    function limpiarPantalla120(){
+
+    pincel.clearRect(0,30,600,40);
+    }
+    function limpiarPantalla240(){
+        pincel.clearRect(0,60,600,50)
+    }
+
+    var x = 0;
+    var sentidox = 1;
+    function actualizarPantalla(){
+        limpiarPantalla();
+        if(x > 600){
+            sentidox = -1
+        }else if(x < 0) {
+                sentidox = 1
+            }
+        
+        dishenarCircuferencia(x,20,10);
+        x = x + sentidox;
+     }
+    var sentidoi = 1;
+    var i = 0;
+    function actualizarPantalla120(){
+        limpiarPantalla120();
+        if(i > 600){
+            sentidoi = -1
+        }else if(i < 0){
+            sentidoi = 1
+        }
+        dishenarCircuferencia(i,50,10)
+        i = i + sentidoi;
+
+    }
+    var sentidoh = 1
+    var h = 0
+    function actualizarPantalla240(){
+        limpiarPantalla240();
+        if(h > 600){
+            sentidoh = -1
+        }else if(h < 0){
+            sentidoh = 1
+        }
+        dishenarCircuferencia(h,80,10)
+        h = h + sentidoh
+
+    }
+
+
+
+    setInterval(actualizarPantalla,16.7);
+
+    setInterval(actualizarPantalla120,6.94);
+
+    setInterval(actualizarPantalla240,3.47);
+</script>
+
+
+
+
+ <!--   /*for(var x= 20; x < 600; x++){
+        dishenarCircuferencia(x,20,10);
+    }
+
+    var x = 20;
+    while(x < 600){
+        dishenarCircuferencia(x,20,10);
+        
+        x++;
+    }
+        dishenarCircuferencia(x,20,10);
+        */ -->
